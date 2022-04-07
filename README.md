@@ -1,11 +1,11 @@
 # SmartArray
 
-A c++17 class enables smart memory management of multidimensional numeric array. It supports copy/move constructor/operator. The underline memory is allocated continous thus it can be easily sent/receievd by MPI. The shape is managed by std::array
+A c++11 class enables smart memory management of multidimensional numeric array. It supports copy/move constructor/operator. The underline memory is allocated continous thus it can be easily sent/receievd by MPI. The shape is managed by std::array
 
 ## LICENSE
 MIT
 
-Copyright <2020> <Han Luo<han.luo AT gmail.com>>
+Copyright <2022> <Han Luo<han.luo AT gmail.com>>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
