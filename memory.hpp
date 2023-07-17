@@ -269,7 +269,7 @@ inline void convertF_inplace(pointer_n_t<double, 2> &array,
   long m = shape[0], n = shape[1];
   double *AB = *array;
   if (m <= INT_MAX && n <= INT_MAX) {
-    mkl_dimatcopy('C', 'T', m, shape[1], 1.0, AB, n, m);
+    mkl_dimatcopy('R', 'T', m, shape[1], 1.0, AB, n, m);
     delete[] array;
     array = new double *[n];
     array[0] = AB;
@@ -287,7 +287,7 @@ inline void convertF_inplace(pointer_n_t<float, 2> &array,
   int m = shape[0], n = shape[1];
   float *AB = *array;
   if (m <= INT_MAX && n <= INT_MAX) {
-    mkl_simatcopy('C', 'T', m, shape[1], 1.0, AB, n, m);
+    mkl_simatcopy('R', 'T', m, shape[1], 1.0, AB, n, m);
     delete[] array;
     array = new float *[n];
     array[0] = AB;
